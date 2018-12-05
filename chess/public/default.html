@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="lib/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="./default.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./lib/chessboard-0.3.0.js"></script>
+    <script src="./lib/chess.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    
+  </head>
+  <body>
+    <div class="chatlist">
+    <div id="chat">
+  
+      </div>
+    <div id="root"></div>
+    <div id="board"></div>
+   
+    
+   
+    <button onclick="playRandom()">Play against the Computer</button>
+    <button onclick="createGame()"> Create new game </button>
+
+    <input type="text" id="message" placeholder="Message">
+    <button onclick="sendPM()">Send Private Message</button>
+
+    <div id="gameList"></div>
+  
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="./default.js"></script>
+    <script src="./lib/chessreact.js"></script>
+  </body>
+</html>
+
